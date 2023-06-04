@@ -66,6 +66,10 @@ GRAPHENE = {'SCHEMA': 'sns.schema.schema',
             ],
 }
 
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000"
+]
+
 AUTHENTICATION_BACKENDS = [
   'graphql_jwt.backends.JSONWebTokenBackend',
   'django.contrib.auth.backends.ModelBackend',
